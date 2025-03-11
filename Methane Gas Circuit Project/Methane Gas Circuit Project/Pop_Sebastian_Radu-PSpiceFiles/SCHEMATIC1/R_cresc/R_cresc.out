@@ -1,0 +1,226 @@
+
+**** 04/23/24 15:23:53 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-R_cresc"  [ D:\Programe\Cadence\Laburi_Teme_Shit\Pop_Sebastian_Radu-PSpiceFiles\SCHEMATIC1\R_cresc.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "R_cresc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../pop_sebastian_radu-pspicefiles/ledverde.lib" 
+* From [PSPICE NETLIST] section of D:\Programe\Cadence\Working Shit\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM r 33k 66k 330 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source POP_SEBASTIAN_RADU
+R_R6         N58040 VREF2 R_R6 15k TC=0,0 
+.model        R_R6 RES R=1 DEV=0.5% TC1=0 TC2=0
+X_U5         N60247 VREF2 VCC 0 VREF2 LM741
+R_R1         VREF1 N58124 R_R1 1k TC=0,0 
+.model        R_R1 RES R=1 DEV=0.5% TC1=0 TC2=0
+X_U4         N58804 VREF1 VCC 0 VREF1 LM741
+R_R5         N58230 0  33k TC=0,0 
+R_R20         0 N60247  3k TC=0,0 
+R_R4         0 N58532 R_R4 5.1k TC=0,0 
+.model        R_R4 RES R=1 DEV=0.5% TC1=0 TC2=0
+R_R17         N58804 VCC  30k TC=0,0 
+R_R8         OUT N58392 R_R8 100k TC=0,0 
+.model        R_R8 RES R=1 DEV=0.5% TC1=0 TC2=0
+R_R3         N58524 N58532 R_R3 1k TC=0,0 
+.model        R_R3 RES R=1 DEV=0.5% TC1=0 TC2=0
+V_V1         VCC 0 15V
+R_Rs         VCC N58230  {r} TC=0,0 
+Q_Q6         N581480 N58392 0 BC107A 
+R_R2         N58124 N58130 R_R2 5.1k TC=0,0 
+.model        R_R2 RES R=1 DEV=0.5% TC1=0 TC2=0
+R_R9         VCC N581480  3100 TC=0,0 
+R_R7         N58040 OUT R_R7 11k TC=0,0 
+.model        R_R7 RES R=1 DEV=0.5% TC1=0 TC2=0
+X_U1         N58230 N58524 VCC 0 N58524 LM741
+R_R21         N60247 VCC  62k TC=0,0 
+X_U2         N58532 N58124 VCC 0 N58130 LM741
+R_R18         N588201 N58804  13k TC=0,0 
+X_U3         N58040 N58130 VCC 0 OUT LM741
+R_R23         0 N588201  1.8k TC=0,0 
+D_D1          N607881 0 GreenLED 
+R_LED         N607881 OUT  330 TC=0,0 
+.PARAM  r=66k
+
+**** RESUMING R_cresc.cir ****
+.END
+
+**** 04/23/24 15:23:53 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-R_cresc"  [ D:\Programe\Cadence\Laburi_Teme_Shit\Pop_Sebastian_Radu-PSpiceFiles\SCHEMATIC1\R_cresc.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               GreenLED        X_U5.x_lm741.dx X_U5.x_lm741.dy X_U4.x_lm741.dx 
+          IS   10.010000E-21  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    2.1653                                                       
+         ISR  100.870000E-12                                                 
+          NR    4.995                                                        
+         IKF  107.23                                                         
+          BV     .1                                                          
+         IBV  261.790000E-09                                                 
+          RS    1.2036          1               1.000000E-03    1            
+          TT    5.000000E-09                                                 
+         CJO    1.000000E-12                   10.000000E-12                 
+          VJ     .75                                                         
+           M     .3333                                                       
+
+
+               X_U4.x_lm741.dy X_U1.x_lm741.dx X_U1.x_lm741.dy X_U2.x_lm741.dx 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U2.x_lm741.dy X_U3.x_lm741.dx X_U3.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03 
+         CJO   10.000000E-12                   10.000000E-12 
+
+
+**** 04/23/24 15:23:53 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-R_cresc"  [ D:\Programe\Cadence\Laburi_Teme_Shit\Pop_Sebastian_Radu-PSpiceFiles\SCHEMATIC1\R_cresc.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          X_U5.x_lm741.qx X_U4.x_lm741.qx X_U1.x_lm741.qx 
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS    7.049000E-15  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  375.5            93.75           93.75           93.75         
+          NF    1               1               1               1            
+         VAF  116.3                                                          
+         IKF    4.589                                                        
+         ISE    7.049000E-15                                                 
+          NE    1.281                                                        
+          BR    2.611           1               1               1            
+          NR    1               1               1               1            
+         IKR    5.313                                                        
+         ISC  121.700000E-12                                                 
+          NC    1.865                                                        
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    1.464           0               0               0            
+         CJE   11.500000E-12    0               0               0            
+         VJE     .5              .75             .75             .75         
+         MJE     .2717                                                       
+         CJC    5.380000E-12    0               0               0            
+         VJC     .6218           .75             .75             .75         
+         MJC     .329            .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          TF  451.000000E-12                                                 
+         XTF   17.43                                                         
+         VTF   10                                                            
+         ITF    6.194                                                        
+          TR   10.000000E-09                                                 
+         XTB    1.5                                                          
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+               X_U2.x_lm741.qx X_U3.x_lm741.qx 
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 04/23/24 15:23:53 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-R_cresc"  [ D:\Programe\Cadence\Laburi_Teme_Shit\Pop_Sebastian_Radu-PSpiceFiles\SCHEMATIC1\R_cresc.sim ] 
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               R_R6            R_R1            R_R4            R_R8            
+           R    1               1               1               1            
+
+
+               R_R3            R_R2            R_R7            
+           R    1               1               1            
+
+
+
+          JOB CONCLUDED
+
+**** 04/23/24 15:23:53 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-R_cresc"  [ D:\Programe\Cadence\Laburi_Teme_Shit\Pop_Sebastian_Radu-PSpiceFiles\SCHEMATIC1\R_cresc.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =      130.67
+  Total job time (using Solver 1)   =         .08
+

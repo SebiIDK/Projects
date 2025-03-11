@@ -1,0 +1,4 @@
+ lib=, offset=1110, size=176
+ lib=D:\Programe\Cadence\tools\PSpice\Library\ebipolar.lib, offset=821, size=366
+ lib=D:\Programe\Cadence\tools\PSpice\Library\opamp.lib, offset=58704, size=430
+ lib=D:\Programe\Cadence\tools\PSpice\Library\opamp.lib, offset=101320, size=1093

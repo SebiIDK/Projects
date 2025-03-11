@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-R_desc"  [ D:\Programe\Cadence\Laburi_Teme_Shit\pop_sebastian_radu-pspicefiles\schematic1\r_desc.sim ] 
+
+** Creating circuit file "R_desc.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../pop_sebastian_radu-pspicefiles/ledverde.lib" 
+* From [PSPICE NETLIST] section of D:\Programe\Cadence\Working Shit\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM r 66k 33k 330 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

@@ -1,0 +1,8 @@
+STATUS: PSpice Schematics to Capture translator (22.1.0.d001)
+STATUS:  
+STATUS: Translator started at Tuesday, April 16, 2024 20:56:15
+STATUS: D:\Programe\Cadence\tools\bin\sch2cap -f "D:\Programe\Cadence\Laburi_Teme_Shit\Sabadus_Remus_Catalin-PSpiceFiles\SCHEMATIC1\LEDverde.lib" -o "D:\Programe\Cadence\Laburi_Teme_Shit\Sabadus_Remus_Catalin-PSpiceFiles\SCHEMATIC1\LEDverde.olb" -i D:\Programe\Cadence\Working Shit\.\cdssetup\OrCAD_PSpice/22.1.0/PSpice.ini -s GreenLED
+INFO(ORSCH-1029): Using existing library 'D:\Programe\Cadence\tools\Capture\Library\PSpice\modeled.etc'.
+INFO(ORSCH-1029): Using existing library 'D:\Programe\Cadence\Laburi_Teme_Shit\Sabadus_Remus_Catalin-PSpiceFiles\SCHEMATIC1\LEDverde.olb'.
+STATUS: Translator stopped at Tuesday, April 16, 2024 20:56:15
+STATUS: 0 Error messages, 0 Warning messages

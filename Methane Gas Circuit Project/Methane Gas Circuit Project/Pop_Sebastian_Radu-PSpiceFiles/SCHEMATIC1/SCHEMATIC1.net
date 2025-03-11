@@ -1,0 +1,33 @@
+* source POP_SEBASTIAN_RADU
+R_R6         N58040 VREF2 R_R6 15k TC=0,0 
+.model        R_R6 RES R=1 DEV=0.5% TC1=0 TC2=0
+X_U5         N60247 VREF2 VCC 0 VREF2 LM741
+R_R1         VREF1 N58124 R_R1 1k TC=0,0 
+.model        R_R1 RES R=1 DEV=0.5% TC1=0 TC2=0
+X_U4         N58804 VREF1 VCC 0 VREF1 LM741
+R_R5         N58230 0  33k TC=0,0 
+R_R20         0 N60247  3k TC=0,0 
+R_R4         0 N58532 R_R4 5.1k TC=0,0 
+.model        R_R4 RES R=1 DEV=0.5% TC1=0 TC2=0
+R_R17         N58804 VCC  30k TC=0,0 
+R_R8         OUT N58392 R_R8 100k TC=0,0 
+.model        R_R8 RES R=1 DEV=0.5% TC1=0 TC2=0
+R_R3         N58524 N58532 R_R3 1k TC=0,0 
+.model        R_R3 RES R=1 DEV=0.5% TC1=0 TC2=0
+V_V1         VCC 0 15V
+R_Rs         VCC N58230  {r} TC=0,0 
+Q_Q6         N581480 N58392 0 BC107A 
+R_R2         N58124 N58130 R_R2 5.1k TC=0,0 
+.model        R_R2 RES R=1 DEV=0.5% TC1=0 TC2=0
+R_R9         VCC N581480  3100 TC=0,0 
+R_R7         N58040 OUT R_R7 11k TC=0,0 
+.model        R_R7 RES R=1 DEV=0.5% TC1=0 TC2=0
+X_U1         N58230 N58524 VCC 0 N58524 LM741
+R_R21         N60247 VCC  62k TC=0,0 
+X_U2         N58532 N58124 VCC 0 N58130 LM741
+R_R18         N588201 N58804  13k TC=0,0 
+X_U3         N58040 N58130 VCC 0 OUT LM741
+R_R23         0 N588201  1.8k TC=0,0 
+D_D1          N607881 0 GreenLED 
+R_LED         N607881 OUT  330 TC=0,0 
+.PARAM  r=66k
